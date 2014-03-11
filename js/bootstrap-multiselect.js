@@ -463,7 +463,7 @@
 
             var $li = $(this.templates.li);
             $('label', $li).addClass(inputType);
-            $('label', $li).append('<input type="' + inputType + '" />');
+            $('label', $li).append('<input type="' + inputType + '"  name="'+ this.options.nameCheckbox  +'_' + $(element).val() +'" />');
 
             var selected = $(element).prop('selected') || false;
             var $checkbox = $('input', $li);
